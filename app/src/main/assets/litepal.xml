@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="sign" />
+    <version value="1" />
+
+    <!--
+    	For example:
+    	<list>
+    		<mapping class="com.test.model.Reader" />
+    		<mapping class="com.test.model.Magazine" />
+    	</list>
+    -->
+    <list>
+        <mapping class="com.gisroad.sign.module.entity.DepartEntity"/>
+        <mapping class="com.gisroad.sign.module.entity.DepartUserEntity"/>
+        <mapping class="com.gisroad.sign.module.entity.Users"/>
+
+    </list>
+
+</litepal>

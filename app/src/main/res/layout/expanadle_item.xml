@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/exp_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_down"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/depart_name"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/exp_img"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:lines="1"
+        android:paddingLeft="5dp"
+        android:text="这是内容"
+        app:layout_widthPercent="30%" />
+
+    <TextView
+        android:id="@+id/depart_id"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/depart_name"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="这是内容数据"
+        app:layout_widthPercent="30%"
+        android:visibility="gone"/>
+
+
+</android.support.percent.PercentRelativeLayout>
